@@ -1,10 +1,9 @@
 import './App.css';
 import {useState, useEffect} from 'react'
-import Home from './components/Home';
 import {Routes, Route} from 'react-router-dom'
-import Muscles from './components/Muscles';
-import Exercise from './components/Exercise';
-import Form from './components/Form'
+import Home from './components/Home'
+import Exercise from './components/Exercise'
+import Muscles from './components/Muscles'
 function App() {
 
   const [routines, setRoutines] = useState({});
@@ -12,7 +11,7 @@ function App() {
   useEffect(() => {
     fetchRoutines()
   }, [])
-
+  console.log(routines)
   function fetchRoutines() {
     fetch("http://localhost:3000/routines")
     .then(resp=> resp.json())
@@ -20,15 +19,10 @@ function App() {
   }
   return (
     <div className="App">
-      <Form setRoutines={setRoutines}/>
       <Routes>
         <Route exact path="/" element={<Home routines={routines} />} />
-        <Route exact path="/:id/muscles" element={<Muscles />} />
-        <Route
-          exact
-          path="/:id/muscles/:muscle/exercise"
-          element={<Exercise />}
-        />
+        <Route exact path="/muscle/:workout" element={<Muscles />} />
+        <Route exact path="/muscle/exercise" element={<Exercise />} />
       </Routes>
     </div>
   );
