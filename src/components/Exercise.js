@@ -1,11 +1,21 @@
-import React from 'react'
-
-function Exercise() {
-    return (
+import React from "react";
+import { useLocation, Link } from "react-router-dom";
+const Exercise = () => {
+  const location = useLocation();
+  console.log(location);
+  return (
+    <div>
+      <Link to="/">Back to home</Link>
+      {location.state.data.map((exercise) => (
         <div>
-            Hello1
+          <h2>{exercise.name}</h2>
+          <p>{exercise.description}</p>
+          <h3>{exercise.reps} </h3>
+          <h3>{exercise.sets}</h3>
         </div>
-    )
-}
+      ))}
+    </div>
+  );
+};
 
-export default Exercise
+export default Exercise;

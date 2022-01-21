@@ -3,18 +3,19 @@ import { useLocation } from 'react-router-dom';
 import Button from './Button'
 function Muscles() {
     const location = useLocation()
-
+    console.log(location)
     const allMuscles = location.state.data
-    const theMuscles = Object.values(allMuscles)
-    console.log(theMuscles)
-    /* {allMuscles.map((workout) => (
-          <Button data={workout[1]} 
-          path={`${location.pathname}/${workout[0]}/exercise`}>
-              {workout[0]} exercises</Button>)} */
+  
+    console.log(allMuscles)
+
+    const muscleNames = allMuscles.map(workout => workout.muscle)
+    const uniqueNames = Array.from(new Set(muscleNames))
     
     return (
       <div>
-       <Button data={allMuscles}></Button>
+        {uniqueNames.map(name => <Button data={allMuscles}
+          path={`${location.pathname}/${name}/exercise`}>
+              {name} exercises</Button>)}
         
         
       </div>

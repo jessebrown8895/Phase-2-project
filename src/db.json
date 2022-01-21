@@ -1,84 +1,95 @@
 {
   "routines": [
-          {
-            "movement": "pull",
-            "name": "Deadlift",
-            "muscle": "back",
-            "description": "The deadlift is a movement where your hips hinge backward to lower down and pick up a weighted barbell or kettlebell from the floor. Your back is flat throughout the movement. Some benefits of performing deadlifts include strengthening and gaining more definition in your upper and lower back, glutes, and hamstrings.",
-            "reps": 15,
-            "sets": 3
-          },
-          {
-            "movement": "pull",
-            "name": "Pull-up",
-            "muscle": "back",
-            "description": "A pullup is a challenging upper body exercise where you grip an overhead bar and lift your body until your chin is above that bar. It's a hard exercise to execute — so hard, in fact, that a U.S. Marine can receive a passing score on the annual physical fitness test without doing pullups at all.",
-            "reps": 15,
-            "sets": 3
-          },
-          {
-            "movement": "pull",
-            "name": "Cable Curl",
-            "muscle": "bicepts",
-            "description": "A cable curl is essentially a standing dumbbell curl performed using the cable machine instead of dumbbells. ... Hook a straight bar attachment up to a cable machine, and set the pulley to the low position. Grab the bar with your arms extended and hands shoulder-width apart, palms facing away from you.",
-            "reps": 15,
-            "sets": 3
-          },
-          {
-            "movement": "pull",
-            "name": "Incline Dumbell Curl",
-            "muscle": "bicepts",
-            "description": "The incline dumbbell curl is a variation of the dumbbell curl and an exercise used to build bigger biceps. The biceps is a tricky (and fun) muscle to target and putting yourself in various degrees of incline can help manipulate the range of motion for either a tighter contraction or deeper stretch.",
-            "reps": 15,
-            "sets": 3
-          },
-          {
-            "movement": "push",
-            "name": "Dumbbell Squeeze Press.",
-            "muscle": "chest",
-            "description": "Take the dumbbells in your hands and lay down on the bench. Place the dumbbells together side by side and lift them up over your chest. Lower them down together and touching each other and then push the dumbbells back up.",
-            "reps": 15,
-            "sets": 3
-          },
-          {
-            "movement": "push",
-            "name": "Decline Barbell Bench Bress",
-            "muscle": "chest",
-            "description": "In a decline bench press, the bench is set to 15 to 30 degrees on a decline. This angle places your upper body on a downward slope, which activates the lower pectoral muscles as you push weights away from your body. When part of a complete chest routine, decline bench presses can help your pecs look more defined.",
-            "reps": 15,
-            "sets": 3
-          },
-          {
-            "movement": "push",
-            "name": "One-Arm Overhead Extension",
-            "muscle": "tricepts",
-            "description": "Hold a dumbbell in one hand directly behind your head, with your elbow bent and pointed towards the ceiling. Extend through your elbow until your arm is straight and the dumbbell is directly above you. Lower your arm back to starting position and repeat.",
-            "reps": 15,
-            "sets": 3
-          },
-          {
-            "movement": "push",
-            "name": "Back Squat",
-            "muscle": "tricepts",
-            "description": "Sit back into hips and keep the back straight and the chest up, squatting down so the hips are below the knees. ... From the bottom of the squat, press feet into the ground and push hips forward to return to the top of the standing position.",
-            "reps": 15,
-            "sets": 3
-          },
-          {
-            "movement": "legs",
-            "name": "Walking Lunges",
-            "muscle": "legs",
-            "description": "Walking lunges are a variation on the static lunge exercise. Instead of standing back upright after performing a lunge on one leg, as you would in a static bodyweight lunge, you 'walk' forward by lunging out with the other leg. ... Walking lunges strengthen the leg muscles as well as the core, hips, and glutes.",
-            "reps": 15,
-            "sets": 3
-          },
-          {
-            "movement": "legs",
-            "name": "Lateral Lunge",
-            "muscle": "legs",
-            "description": "How to do lateral lunges. Stand with your feet hip-width apart. Take a big step to the side with your left leg, then bend your left knee, push hips back and lower until your left knee is bent 90 degrees. This should take around two seconds. Push back to start.",
-            "reps": 15,
-            "sets": 3
-          }
-      ]
+    {
+      "id": 0,
+      "movement": "pull",
+      "name": "Deadlift",
+      "muscle": "back",
+      "description": "The deadlift is a movement where your hips hinge backward to lower down and pick up a weighted barbell or kettlebell from the floor. Your back is flat throughout the movement. Some benefits of performing deadlifts include strengthening and gaining more definition in your upper and lower back, glutes, and hamstrings.",
+      "reps": 15,
+      "sets": 3
+    },
+    {
+      "id": 1,
+      "movement": "pull",
+      "name": "Pull-up",
+      "muscle": "back",
+      "description": "A pullup is a challenging upper body exercise where you grip an overhead bar and lift your body until your chin is above that bar. It's a hard exercise to execute — so hard, in fact, that a U.S. Marine can receive a passing score on the annual physical fitness test without doing pullups at all.",
+      "reps": 15,
+      "sets": 3
+    },
+    {
+      "id": 2,
+      "movement": "pull",
+      "name": "Cable Curl",
+      "muscle": "bicepts",
+      "description": "A cable curl is essentially a standing dumbbell curl performed using the cable machine instead of dumbbells. ... Hook a straight bar attachment up to a cable machine, and set the pulley to the low position. Grab the bar with your arms extended and hands shoulder-width apart, palms facing away from you.",
+      "reps": 15,
+      "sets": 3
+    },
+    {
+      "id": 3,
+      "movement": "pull",
+      "name": "Incline Dumbell Curl",
+      "muscle": "bicepts",
+      "description": "The incline dumbbell curl is a variation of the dumbbell curl and an exercise used to build bigger biceps. The biceps is a tricky (and fun) muscle to target and putting yourself in various degrees of incline can help manipulate the range of motion for either a tighter contraction or deeper stretch.",
+      "reps": 15,
+      "sets": 3
+    },
+    {
+      "id": 4,
+      "movement": "push",
+      "name": "Dumbbell Squeeze Press.",
+      "muscle": "chest",
+      "description": "Take the dumbbells in your hands and lay down on the bench. Place the dumbbells together side by side and lift them up over your chest. Lower them down together and touching each other and then push the dumbbells back up.",
+      "reps": 15,
+      "sets": 3
+    },
+    {
+      "id": 5,
+      "movement": "push",
+      "name": "Decline Barbell Bench Bress",
+      "muscle": "chest",
+      "description": "In a decline bench press, the bench is set to 15 to 30 degrees on a decline. This angle places your upper body on a downward slope, which activates the lower pectoral muscles as you push weights away from your body. When part of a complete chest routine, decline bench presses can help your pecs look more defined.",
+      "reps": 15,
+      "sets": 3
+    },
+    {
+      "id": 6,
+      "movement": "push",
+      "name": "One-Arm Overhead Extension",
+      "muscle": "tricepts",
+      "description": "Hold a dumbbell in one hand directly behind your head, with your elbow bent and pointed towards the ceiling. Extend through your elbow until your arm is straight and the dumbbell is directly above you. Lower your arm back to starting position and repeat.",
+      "reps": 15,
+      "sets": 3
+    },
+    {
+      "id": 7,
+      "movement": "push",
+      "name": "Back Squat",
+      "muscle": "tricepts",
+      "description": "Sit back into hips and keep the back straight and the chest up, squatting down so the hips are below the knees. ... From the bottom of the squat, press feet into the ground and push hips forward to return to the top of the standing position.",
+      "reps": 15,
+      "sets": 3
+    },
+    {
+      "id": 8,
+      "movement": "legs",
+      "name": "Walking Lunges",
+      "muscle": "legs",
+      "description": "Walking lunges are a variation on the static lunge exercise. Instead of standing back upright after performing a lunge on one leg, as you would in a static bodyweight lunge, you 'walk' forward by lunging out with the other leg. ... Walking lunges strengthen the leg muscles as well as the core, hips, and glutes.",
+      "reps": 15,
+      "sets": 3
+    },
+    {
+      "id": 9,
+      "movement": "legs",
+      "name": "Lateral Lunge",
+      "muscle": "legs",
+      "description": "How to do lateral lunges. Stand with your feet hip-width apart. Take a big step to the side with your left leg, then bend your left knee, push hips back and lower until your left knee is bent 90 degrees. This should take around two seconds. Push back to start.",
+      "reps": 15,
+      "sets": 3
+    }
+    
+  ]
 }

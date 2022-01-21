@@ -1,8 +1,9 @@
 import React from 'react'
 import Button from './Button'
 function Home({routines}) {
+    console.log(routines)
     const theRoutines = Object.values(routines)
-    
+    console.log(theRoutines)
        const push = theRoutines.filter(routine => {
             if(routine.movement === "push"){
                 return routine.movement
