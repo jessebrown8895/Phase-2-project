@@ -70,23 +70,23 @@ const Form = ({ setRoutines }) => {
         <br />
         <label>
           Muscle:
-          <input
-            name="muscle"
-            type="text"
-            value={newExercise.muscle}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Description:
           <select name="movement" onChange={handleChange} required>
             <option value="">select one</option>
             <option value="push">push</option>
             <option value="pull">pull</option>
             <option value="legs">legs</option>
           </select>
+        </label>
+        <br />
+        <label>
+          Description:
+          <input
+            name="description"
+            type="text"
+            value={newExercise.description}
+            onChange={handleChange}
+            required
+          />
         </label>
         <br />
         <label>

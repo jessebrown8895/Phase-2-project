@@ -8,11 +8,11 @@ import Form from './components/Form'
 function App() {
 
   const [routines, setRoutines] = useState([]);
-  console.log(routines)
+
   useEffect(() => {
     fetchRoutines()
   }, [])
-  console.log(routines)
+ 
   function fetchRoutines() {
     fetch("http://localhost:3000/routines")
     .then(resp=> resp.json())

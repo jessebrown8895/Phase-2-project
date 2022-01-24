@@ -3,7 +3,7 @@ import Button from './Button'
 function Home({routines}) {
     
     const theRoutines = Object.values(routines)
-    console.log(theRoutines)
+
        const push = theRoutines.filter(routine => {
             if(routine.movement === "push"){
                 return routine.movement
@@ -19,7 +19,7 @@ function Home({routines}) {
     
     
       const legs = theRoutines.filter((routine) => {
-        if (routine.movement === "pull") {
+        if (routine.movement === "legs") {
           return routine.movement;
         }
       })
