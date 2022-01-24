@@ -81,13 +81,12 @@ const Form = ({ setRoutines }) => {
         <br />
         <label>
           Description:
-          <input
-            name="description"
-            type="text"
-            value={newExercise.description}
-            onChange={handleChange}
-            required
-          />
+          <select name="movement" onChange={handleChange} required>
+            <option value="">select one</option>
+            <option value="push">push</option>
+            <option value="pull">pull</option>
+            <option value="legs">legs</option>
+          </select>
         </label>
         <br />
         <label>
