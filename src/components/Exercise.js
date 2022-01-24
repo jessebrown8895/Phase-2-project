@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation, Link } from "react-router-dom";
 const Exercise = () => {
   const location = useLocation();
-  console.log(location);
+  
   return (
     <div>
       <Link to="/">Back to home</Link>

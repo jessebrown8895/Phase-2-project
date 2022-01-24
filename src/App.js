@@ -8,7 +8,7 @@ import Form from './components/Form'
 function App() {
 
   const [routines, setRoutines] = useState([]);
-  
+  console.log(routines)
   useEffect(() => {
     fetchRoutines()
   }, [])
