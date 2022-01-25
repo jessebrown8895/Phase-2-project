@@ -7,7 +7,7 @@ import Muscles from "./components/Muscles";
 import Form from "./components/Form";
 function App() {
   const [routines, setRoutines] = useState([]);
-
+ 
   useEffect(() => {
     fetchRoutines();
   }, []);
