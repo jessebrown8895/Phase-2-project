@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -18,16 +17,13 @@ const Form = ({ setRoutines }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(
-      'http://localhost:3000/routines',
-      {
-        method: "post",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newExercise),
-      }
-    )
+    fetch("http://localhost:3000/routines", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newExercise),
+    })
       .then((resp) => resp.json())
       .then((data) =>
         setRoutines((currentworkouts) => [...currentworkouts, data])
@@ -70,10 +66,12 @@ const Form = ({ setRoutines }) => {
         <br />
         <label>
           Muscle:
-          <select name="movement" onChange={handleChange} required>
+          <select name="muscle" onChange={handleChange} required>
             <option value="">select one</option>
-            <option value="push">push</option>
-            <option value="pull">pull</option>
+            <option value="chest">chest</option>
+            <option value="tricepts">tricepts</option>
+            <option value="back">back</option>
+            <option value="bicepts">bicepts</option>
             <option value="legs">legs</option>
           </select>
         </label>
