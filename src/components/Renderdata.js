@@ -1,36 +1,47 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from "react";
 
-export const Renderdata = ({exercise}) => {
+export const Renderdata = ({ exercise }) => {
+  const [repCount, setCount] = useState(exercise.reps);
+  const [setCounts, setSetCounts] = useState(exercise.reps);
+
+  const handleSetCount = (e) => {
+    e.target.name === "+"
+      ? setSetCounts((currentCount) => currentCount + 1)
+      : setSetCounts((currentCount) => currentCount - 1);
+  };
+  const handleCount = (e) => {
+    e.target.name === "+"
+      ? setCount((currentCount) => currentCount + 1)
+      : setCount((currentCount) => currentCount - 1);
     
-    const initialState = () => Number(window.localStorage.getItem('count')) || 0
-    const theInitialState = () => Number(window.localStorage.getItem("counts")) || 0
-    const [count, setCount] = useState(initialState)
-    const [counts, setCounts] = useState(theInitialState)
-
-    useEffect(() => {
-      window.localStorage.setItem("count", JSON.stringify(count))
-}, [count])
-
-   useEffect(() => {
-       window.localStorage.setItem("counts", JSON.stringify(counts))
-   })
-
-    const handleCount = () => {
-        setCount(count + 1)
-    }
-
-    const handleMinusCount = () => {
-      setCount(count - 1);
-    };
+  };
+  
   return (
     <div>
       <div className="container">
         <h2>{exercise.name}</h2>
         <p>{exercise.description}</p>
-        {/* <h3>Reps: {count} <button onClick={() => setCount(count + 1)}>+</button> <button onClick={() => setCount(count - 1)}>-</button></h3> */}
-        <h3> reps: {count} <button onClick={handleCount}>+</button>{' '}<button onClick={handleMinusCount}>-</button></h3>
+        {/* <h3>Reps: {repCount} <button onClick={() => setCount(repCount + 1)}>+</button> <button onClick={() => setCount(repCount - 1)}>-</button></h3> */}
+        <h3>
+          {" "}
+          reps: {repCount}{" "}
+          <button name="+" onClick={handleCount}>
+            +
+          </button>{" "}
+          <button name="-" onClick={handleCount}>
+            -
+          </button>
+        </h3>
 
-        <h3>Sets: {counts} <button onClick={() =>  setCounts(counts + 1)}>+</button> <button onClick={() =>  setCounts(counts - 1)}>-</button></h3>
+        <h3>
+          Sets: {setCounts}{" "}
+          <button name="+" onClick={handleSetCount}>
+            +
+          </button>{" "}
+          <button name="-" onClick={handleSetCount}>
+            -
+          </button>
+        </h3>
       </div>
     </div>
   );
