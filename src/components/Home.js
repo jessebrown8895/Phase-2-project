@@ -24,15 +24,9 @@ function Home({ routines }) {
 
   return (
     <div>
-      <Button path={"/muscle/push"} data={push}>
-        Push Routine
-      </Button>
-      <Button path={"/muscle/pull"} data={pull}>
-        Pull Routine
-      </Button>
-      <Button path={"/muscle/legs"} data={legs}>
-        Legs Routine
-      </Button>
+      <Button path={"/muscle/push"} data={push}> Push Routine </Button>
+      <Button path={"/muscle/pull"} data={pull}> Pull Routine </Button>
+      <Button path={"/muscle/legs"} data={legs}> Legs Routine </Button>
     </div>
   );
 }

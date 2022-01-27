@@ -11,9 +11,7 @@ const Form = ({ setRoutines }) => {
     sets: "",
   });
   const history = useNavigate();
-  const handleChange = (e) => {
-    setNewExercise({ ...newExercise, [e.target.name]: e.target.value });
-  };
+  const handleChange = (e) => { setNewExercise({ ...newExercise, [e.target.name]: e.target.value }) };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -41,7 +39,7 @@ const Form = ({ setRoutines }) => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <h1>Create Account</h1>
+        <h1>Create Exercise</h1>
 
         <label>
           Movement:
@@ -105,8 +103,7 @@ const Form = ({ setRoutines }) => {
             type="text"
             value={newExercise.sets}
             onChange={handleChange}
-            required
-          />
+            required/>
         </label>
         <br />
         <input type="submit" value="submit" />

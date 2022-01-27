@@ -5,9 +5,9 @@ import Home from "./components/Home";
 import Exercise from "./components/Exercise";
 import Muscles from "./components/Muscles";
 import Form from "./components/Form";
+
 function App() {
   const [routines, setRoutines] = useState([]);
- 
   useEffect(() => {
     fetchRoutines();
   }, []);
@@ -17,7 +17,7 @@ function App() {
       .then((resp) => resp.json())
       .then((data) => setRoutines(data));
   }
-  return (
+  return (  
     <div className="App">
       <Routes>
         <Route exact path="/" element={<Home routines={routines} />} />

@@ -14,10 +14,7 @@ function Muscles() {
   return (
     <div>
       {uniqueNames.map((name) => (
-        <Button
-          data={allMuscles}
-          path={`${location.pathname}/${name}/exercise`}
-        >
+        <Button data={allMuscles} path={`${location.pathname}/${name}/exercise`}>
           {name} exercises
         </Button>
       ))}

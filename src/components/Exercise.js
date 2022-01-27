@@ -9,7 +9,7 @@ const Exercise = () => {
     <div>
       <Link to="/">Back to home</Link>
       {location.state.data.map((exercise) => (
-        <Renderdata exercise={exercise}/>
+        <Renderdata key={exercise.id} exercise={exercise}/>
       ))}
     </div>
   );
