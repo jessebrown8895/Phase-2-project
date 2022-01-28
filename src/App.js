@@ -22,16 +22,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home routines={routines} />} />
         <Route exact path="/muscle/:workout" element={<Muscles />} />
-        <Route
-          exact
-          path="/muscle/:workout/:muscle/exercise"
-          element={<Exercise />}
-        />
-        <Route
-          exact
-          path="/exercises/new"
-          element={<Form setRoutines={setRoutines} />}
-        />
+        <Route exact path="/muscle/:workout/:muscle/exercise" element={<Exercise />}/>
+        <Route exact path="/exercises/new" element={<Form setRoutines={setRoutines} />}/>
       </Routes>
     </div>
   );
